@@ -12,9 +12,12 @@ const product = function(){
     }, this.product);
 }
 
-const contextObj = {//code}
+// const contextObj = {product: 10}; //{code}
 
-const getProduct = //product function that is called in the context of an contextObj
+const getProduct = product.bind({product: 10}, 2, 3);
+//product function that is called in the context of an contextObj
                     // with two additional parameters
 
 console.log(getProduct(4,5)); // arg_from_obj * 2 * 3 * 4 * 5 = 1200
+
+// i don't understand how it works

@@ -7,3 +7,17 @@
 // "Titanic", the genre "drama" and 1997 release. 
 // Create an instance of the movie2 class with the title of the movie
 // "Troya", the genre "historical" and 2004 release. 
+
+class Movie {
+    constructor(name, category, startShow){
+        this.name = name;
+        this.category = category;
+        this.startShow = startShow;
+    }
+    watchMovie(){
+        return `I watch the movie ${this.name}`;
+    }
+}
+
+const movie1 = new Movie("Titanic", "drama", 1997);
+const movie2 = new Movie("Troya", "historical", 2004);
